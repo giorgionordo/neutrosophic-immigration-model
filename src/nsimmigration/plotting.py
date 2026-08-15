@@ -59,24 +59,63 @@ def save_integrator_evolution(histories: Dict[str, Dict[str, list[float]]], out_
 
 
 def save_topology_structure(histories: Dict[str, Dict[str, list[float]]], out_path: str | Path) -> None:
-    labels = list(histories.keys())
+    preferred_order = ["ER", "SW", "BA"]
+    labels = [lab for lab in preferred_order if lab in histories]
+    labels += [lab for lab in histories.keys() if lab not in labels]
+
     clustering = [histories[k]["clustering"][-1] for k in labels]
     paths = [histories[k]["avg_path"][-1] for k in labels]
+
     x = np.arange(len(labels))
     width = 0.36
-    fig, ax1 = plt.subplots(figsize=(7.4, 4.8), dpi=220)
+
+    fig, ax1 = plt.subplots(figsize=(7.8, 5.1), dpi=220)
     ax2 = ax1.twinx()
-    ax1.bar(x - width / 2, clustering, width, label="Clustering")
-    ax2.bar(x + width / 2, paths, width, alpha=0.60, label="Average path")
+
+    ax1.bar(
+        x - width / 2,
+        clustering,
+        width,
+        label="Clustering"
+    )
+
+    ax2.bar(
+        x + width / 2,
+        paths,
+        width,
+        alpha=0.60,
+        label="Average path"
+    )
+
     ax1.set_xticks(x)
     ax1.set_xticklabels(labels)
     ax1.set_ylabel("Average clustering")
     ax2.set_ylabel("Average path length")
-    ax1.set_title("Structural signatures of the final networks")
+
+    if clustering:
+        ax1.set_ylim(0.0, max(clustering) * 1.35)
+    if paths:
+        ax2.set_ylim(0.0, max(paths) * 1.25)
+
+    fig.suptitle(
+        "Structural signatures of the final networks",
+        y=0.98
+    )
+
     handles1, labels1 = ax1.get_legend_handles_labels()
     handles2, labels2 = ax2.get_legend_handles_labels()
-    ax1.legend(handles1 + handles2, labels1 + labels2, loc="upper center", ncol=2)
-    fig.tight_layout()
+
+    fig.legend(
+        handles1 + handles2,
+        labels1 + labels2,
+        loc="upper center",
+        bbox_to_anchor=(0.5, 0.89),
+        ncol=2,
+        frameon=True,
+        fontsize=8
+    )
+    ax1.grid(True, axis="y", alpha=0.25)
+    fig.tight_layout(rect=[0.0, 0.0, 1.0, 0.86])
     fig.savefig(out_path, bbox_inches="tight")
     plt.close(fig)
 
