@@ -1,0 +1,95 @@
+# --------------------------------------------------------------------
+# Python / PyCharm project ignore file
+# Repository: neutrosophic-immigration-model
+# --------------------------------------------------------------------
+
+# PyCharm / JetBrains IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+out/
+
+# Local virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build / packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test, coverage, and type-checking caches
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Local environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Generated figures and outputs
+# Keep the folder if needed, but ignore regenerated contents.
+figures/*.png
+figures/*.pdf
+figures/*.svg
+figures/*.jpg
+figures/*.jpeg
+
+# LaTeX auxiliary files, if compiling the paper locally
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.toc
+paper/*.lof
+paper/*.lot
+paper/*.run.xml
+paper/*.bcf
+paper/*.nav
+paper/*.snm
+paper/*.vrb
+
+# OS-specific files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini

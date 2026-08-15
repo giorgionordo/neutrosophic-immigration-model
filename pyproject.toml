@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nsimmigration"
+version = "0.1.0"
+description = "Single-valued neutrosophic agent-based network model for immigration and coexistence"
+requires-python = ">=3.10"
+authors = [{name = "Giorgio Nordo", email = "giorgio.nordo@unime.it"}]
+dependencies = ["numpy>=1.24", "networkx>=3.0", "matplotlib>=3.7", "pandas>=2.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
