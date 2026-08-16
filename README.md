@@ -21,7 +21,7 @@ neutrosophic-immigration-model
 Repository URL:
 
 ```text
-https://github.com/giorgionordo/neutrosophic-immigration-model
+https://github.com/giorgionordo/neutrosophic-immigration-model 
 ```
 
 ---
