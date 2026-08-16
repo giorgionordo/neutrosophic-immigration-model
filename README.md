@@ -32,7 +32,7 @@ https://github.com/giorgionordo/neutrosophic-immigration-model
 |---|---|---|
 | **Giorgio Nordo** | Department of Mathematical and Computer Sciences, Physical Sciences and Earth Sciences, University of Messina, Viale Ferdinando Stagno d'Alcontres 31, 98166 Messina, Italy | `giorgio.nordo@unime.it` · ORCID iD: [`0000-0002-9585-9680`](https://orcid.org/0000-0002-9585-9680) · Website: <https://www.nordo.it> |
 | **Carmelo Filippo Munafò** | Department of Mathematical and Computer Sciences, Physical Sciences and Earth Sciences, University of Messina, Italy; Department of Industrial Engineering, University of Salerno, Fisciano, Italy; Department for the Promotion of Human Science and Quality of Life, San Raffaele University, Rome, Italy | `carmelofilippo.munafo@unime.it` · ORCID iD: [`0000-0003-3611-0941`](https://orcid.org/0000-0003-3611-0941) · Corresponding author |
-| **Nivetha Martin** | Department of Mathematics, Arul Anandar College (Autonomous), Karumathur, Madurai, Tamil Nadu 625514, India; Dean of Research Institute, Arul Anandar College (Autonomous) | `nivetha.martin710@gmail.com` · ORCID iD: [`0000-0001-9942-1320`](https://orcid.org/0000-0001-9942-1320) · Scopus Author ID: `56939762600` |
+| **Nivetha Martin** | Department of Mathematics, Arul Anandar College (Autonomous), Karumathur, Madurai, Tamil Nadu 625514, India | `nivetha.martin710@gmail.com` · ORCID iD: [`0000-0001-9942-1320`](https://orcid.org/0000-0001-9942-1320) · Scopus Author ID: `56939762600` |
 
 ---
 
