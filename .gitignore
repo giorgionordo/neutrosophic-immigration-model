@@ -60,13 +60,9 @@ Thumbs.db
 .env.*
 !.env.example
 
-# Generated figures and outputs
-# Keep the folder if needed, but ignore regenerated contents.
-figures/*.png
-figures/*.pdf
-figures/*.svg
-figures/*.jpg
-figures/*.jpeg
+# Reproducibility outputs
+# The official figures/ and results/ directories are intentionally versioned.
+# Do not ignore them: they contain the numerical outputs used in the manuscript.
 
 # LaTeX auxiliary files, if compiling the paper locally
 paper/*.aux
@@ -93,3 +89,7 @@ paper/*.vrb
 .Trashes
 ehthumbs.db
 Desktop.ini
+
+# Optional local scratch output directories
+figures_tmp/
+results_tmp/

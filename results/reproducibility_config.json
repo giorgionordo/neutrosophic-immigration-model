@@ -1,0 +1,74 @@
+{
+  "N": 90,
+  "n_migrant_groups": 2,
+  "migrant_fraction": 0.3,
+  "T_max": 100,
+  "target_average_degree": 6,
+  "er_p": 0.06741573033707865,
+  "ws_k": 6,
+  "ws_rewire": 0.12,
+  "ba_m": 3,
+  "ba_seed_size": 4,
+  "chi": 1.0,
+  "lambda": 0.6,
+  "sigma": 0.55,
+  "kappa_0": 0.025,
+  "rho": 0.3,
+  "beta": 0.55,
+  "capacity_k0": 6.0,
+  "capacity_a": 0.05,
+  "capacity_b": 0.05,
+  "capacity_c": 0.05,
+  "gamma": 10.0,
+  "eta": 0.45,
+  "learning_rate_alpha": 0.18,
+  "discount_Gamma": 0.82,
+  "epsilon_greedy": 0.12,
+  "integration_bonus_zeta": 0.1,
+  "distance_penalty_xi": 0.08,
+  "distance_threshold_theta": 0.75,
+  "neutral_trust_tau0": 0.5,
+  "score_bins": [
+    -0.25,
+    0.25
+  ],
+  "load_bins": [
+    0.75,
+    1.1
+  ],
+  "cross_bins": [
+    0.25,
+    0.55
+  ],
+  "integrator_weights": [
+    0.18,
+    0.18,
+    0.22,
+    0.27,
+    0.15
+  ],
+  "reward_matrix": [
+    [
+      0.82,
+      0.67,
+      0.67
+    ],
+    [
+      0.74,
+      0.78,
+      0.72
+    ],
+    [
+      0.74,
+      0.72,
+      0.78
+    ]
+  ],
+  "tipping_theta_I": 0.8,
+  "tipping_theta_g": 0.25,
+  "directed_strength_initial_range": [
+    0.55,
+    1.0
+  ],
+  "rng_streams": "seed, seed+10000, seed+20000, seed+30000 for graph/attributes/edge strengths/dynamics"
+}
