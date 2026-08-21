@@ -400,14 +400,13 @@ class NeutrosophicImmigrationModel:
         c = self.config
         if i == j or self.G.has_edge(i, j):
             return 0.0
-        z = self.local_state(i)
-        qfactor = float(np.exp(np.clip(self.q_tables[i][z]["add"], -20.0, 20.0)))
+        # Q-learning selects the action. Candidate weights implement Eq. (A12)
+        # and therefore contain only target-dependent factors.
         return float(
             self.similarity(i, j)
             * ((self.G.degree(j) + c.attractiveness) ** c.preferential_eta)
             * (1.0 + c.prestige_beta * self.degree_centrality(j))
             * self.trust_score(i, j)
-            * qfactor
         )
 
     def add_distribution(self, i: int) -> tuple[list[int], np.ndarray]:
